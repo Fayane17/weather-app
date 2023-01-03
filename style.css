@@ -17,12 +17,12 @@
   .side-bar {
     border-right: 5px solid goldenrod;
     padding: 0;
-    margin-right: 400px;
+  
   }
 
   .top-right {
     position: relative;
-    left: 200px;
+
     border: 5px solid goldenrod;
     display: flex;
     padding-left: 10px;
@@ -31,7 +31,6 @@
 
   .bottom-right {
     position: relative;
-    left: 200px;
     display: flex;
     border: 5px solid goldenrod;
     padding-left: 10px;
