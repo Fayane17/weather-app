@@ -1,6 +1,6 @@
 var APIKey = "bbc5a82d3098668f50d48055e8c68c3b"
 
-var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
+var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
 var submit = document.getElementById("submit")
 var forecast = document.getElementById("5-day-forecast");
 var cityInfo = document.getElementById("cityInfo");
@@ -20,7 +20,7 @@ function getResponseFromAPI(response) {
 }
 
 function printCityName(cityName) {
-    var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + APIKey;
+    var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + APIKey;
     console.log(queryUrl)
     fetch(queryUrl)
         .then(getResponseFromAPI)
@@ -32,7 +32,7 @@ function printCityName(cityName) {
 }
 
 function getCityCoord(cityName) {
-    var geoCodingUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid=bbc5a82d3098668f50d48055e8c68c3b";
+    var geoCodingUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=5&appid=bbc5a82d3098668f50d48055e8c68c3b";
     fetch(geoCodingUrl)
         .then(function (response) {
             return response.json();
